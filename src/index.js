@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Draw from './components/Draw'
 import reportWebVitals from './reportWebVitals';
-import AboutUs from './AboutUs';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

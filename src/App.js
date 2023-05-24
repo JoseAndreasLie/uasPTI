@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar1 from './components/Navbar';
+import Title from './components/Title';
+import Bucket from './components/Bucket';
+import Subtitle from './components/Subtitle';
+import Galeri from './components/Galeri'
+import whitebucket from './img/whitebucket.png';
+import blackbucket from './img/blackbucket.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar1 />
+      <div className="background intro">
+          <Title />
+      </div>
+      <div className="background bucket">
+        <div className="water">
+          <Bucket imgUrl={whitebucket}/>
+          <Bucket imgUrl={blackbucket}/>
+        </div>
+      </div>
+      <div className="background galeri">
+        <Galeri />
+      </div>
+      <div className="background paint"></div>
     </div>
   );
 }

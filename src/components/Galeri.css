@@ -1,0 +1,20 @@
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 250vh;
+    transform: translate(0%, -50%); 
+    user-select: none;
+}
+
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+.image:hover{
+    content: url('../img/bucket1.png');
+}
