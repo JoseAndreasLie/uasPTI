@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import ColorPicker from "./button";
 import bucket from "./bucketInfo";
 import "./colorPicker.css";
@@ -134,9 +133,9 @@ function BucketColorPicker() {
 
   return (
     <div>
-      <h1>
+      <h2>
         <center>Choose any color</center>
-      </h1>
+      </h2>
       <div id="imgcenter">
         <img src={selectedColor.img} alt="" id="imgSize" />
       </div>

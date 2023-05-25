@@ -11,19 +11,6 @@ function App() {
   return (
     <div className="App">
       <Navbar1 />
-      <div className="background intro">
-          <Title />
-      </div>
-      <div className="background bucket">
-        <div className="water">
-          <Bucket imgUrl={whitebucket}/>
-          <Bucket imgUrl={blackbucket}/>
-        </div>
-      </div>
-      <div className="background galeri">
-        <Galeri />
-      </div>
-      <div className="background paint"></div>
     </div>
   );
 }

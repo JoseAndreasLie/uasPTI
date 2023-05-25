@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import "./Opening.css";
+import logo from '../img/logo.png'
 
 function Welcome() {
   const [flip, setFlip] = useState(0);
@@ -153,7 +154,7 @@ function Welcome() {
       </animated.div>
       <animated.div style={setLogoProps}>
         <div id="container2">
-          <img src="logo.png" id="logo" alt="Logo" />
+          <img src={logo} id="logo" alt="Logo" />
         </div>
       </animated.div>
       <animated.div style={setLeftProps}>
