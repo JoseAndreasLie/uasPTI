@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+:root {
+	--body-color: #2c2d2a;
+	--savanna-bg: #e9bf8b;
+	--beach-bg: #e7dfcf;
+	--glacier-bg: #b6d6c8;
+	--coral-bg: #e86357;
+	--arrow-fill: #333231;
+	--body-font: "Montserrat", sans-serif;
+	--italic-font: "EB Garamond", serif;
+}
+
+.product {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+	background-color: #e6decf;
+	padding: 0 30px;
+	overflow: hidden;
+	position: relative;
+		@media (max-width: 930px) {
+        overflow-y: auto;
+		height: 100%;
+		max-height: 100%;
+	}
+}
+
+.left-side {
+    margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 320px;
+	
+	@media screen and (max-width: 930px) {
+		text-align: center;
+		max-width: 450px;
+	}
+}
+
+.mySwiper {
+	display: flex;
+	flex-grow: 1;
+	position: relative;
+}
+
+.main {
+	padding: 42px 5px 30px ;
+	display: flex;
+	flex-grow: 1;
+	position: relative;
+
+	@media screen and (max-width: 930px) {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-header {
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 4px;
+		font-weight: 600;
+		transition-delay: 0.2s;
+	}
+
+	&-title {
+		font-family: var(--italic-font);
+		font-size: 100px;
+		font-weight: 400;
+		margin-top: 10px;
+		line-height: 1em;
+		transition-delay: 0.3s;
+	}
+
+	&-subtitle {
+		font-family: var(--italic-font);
+		font-weight: 400;
+		font-size: 32px;
+		margin-top: 14px;
+		margin-bottom: 60px;
+		transition-delay: 0.4s;
+	}
+
+	&-content {
+		&__title {
+			font-size: 26px;
+			font-family: var(--italic-font);
+			font-style: italic;
+			margin-bottom: 14px;
+			transition-delay: 0.2s;
+		}
+
+		&__subtitle {
+			font-size: 14px;
+			line-height: 1.5;
+			margin-bottom: 24px;
+			letter-spacing: -0.01em;
+			transition-delay: 0.3s;
+		}
+
+		.more-menu {
+			font-size: 13px;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			transition-delay: 0.4s;
+			
+			@media screen and (max-width: 930px) {
+				justify-content: center;
+			}
+
+			svg {
+				width: 28px;
+				height: 18px;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+.center {
+    margin-top: 50px;
+	display: flex;
+	margin-left: 120px;
+	position: relative;
+	flex-shrink: 0;
+
+	@media screen and (max-width: 930px) {
+		margin-left: 0;
+		margin-bottom: 56px;
+	}
+
+	.bottle-bg {
+		width: 320px;
+		height: 450px;
+		object-fit: cover;
+		border-radius: 160px;
+
+		@media screen and (max-width: 930px) {
+			width: 260px;
+			height: 390px;
+		}
+		@media screen and (max-width: 575px) {
+			width: 220px;
+			height: 340px;
+		}
+	}
+
+	.bottle-img {
+        width: 400px;
+		position: absolute;
+		top: 25%;
+		left: 0;
+		transform: scale(1.6);
+	}
+}
+
+.swiper-slide {
+	opacity: 0 !important;
+	transition: 0.4s;
+	&-active {
+		opacity: 1 !important;
+	}
+}
+
+.swiper-slide .main-wrapper > *,
+.swiper-slide .main-content > * {
+	transform: translateY(-30px);
+	opacity: 0;
+	transition-duration: 0.8s;
+}
+
+.swiper-slide-active .main-wrapper > *,
+.swiper-slide-active .main-content > * {
+	transform: none;
+	opacity: 1;
+}
+
+.swiper-slide .bottle-bg {
+	transition-duration: 0.6s;
+	opacity: 0;
+	object-position: 60%;
+}
+
+.swiper-slide-active .bottle-bg {
+	opacity: 1;
+	transform: none;
+	object-position: 50%;
+}
+
+.swiper-slide .bottle-img {
+	transition-duration: 0.8s;
+	transform: scale(1.2);
+	opacity: 0;
+}
+
+.swiper-slide-active .bottle-img {
+	opacity: 1;
+	transform: scale(1.6);
+}
+
+.buy {
+	position: absolute;
+	bottom: -10px;
+	--b: 3px;   
+	--s: .45em; 
+	--color: #373B44;
+	
+	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+	color: var(--color);
+	--_p: var(--s);
+	background:
+		conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+		var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+	transition: .3s linear, color 0s, background-color 0s;
+	outline: var(--b) solid #0000;
+	outline-offset: .6em;
+	font-size: 16px;
+
+	border: 0;
+
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.buy:hover,
+.buy:focus-visible{
+	--_p: 0px;
+	outline-color: var(--color);
+	outline-offset: .05em;
+}
+
+.buy:active {
+	background: var(--color);
+	color: #fff;
+}

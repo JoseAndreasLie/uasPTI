@@ -1,0 +1,39 @@
+#text-logo {
+    font-family: 'Shrikhand', cursive;
+    stroke-dashoffset: 1114px;
+    stroke-dasharray: 1114px;
+    -moz-animation: draw 10s forwards ease-in;
+    -webkit-animation: draw 10s forwards ease-in;
+    animation: draw 10s forwards ease-in;
+    background-clip: text;
+}
+
+.draw_text{
+    position: absolute;
+}
+
+.p{
+    position: absolute;
+    top: 50vh;
+    left: 2vw;
+    color: #f7f0ea;
+    font-size: 20px;
+}
+
+@keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-moz-keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

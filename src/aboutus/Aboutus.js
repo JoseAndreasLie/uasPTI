@@ -1,7 +1,7 @@
 function Aboutus(){
     return(
         <div>
-            <h2>About us</h2>
+            <h1>About us</h1>
         </div>
     );
 }

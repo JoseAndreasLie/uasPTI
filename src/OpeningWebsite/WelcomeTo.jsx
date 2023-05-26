@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "react-spring";
+import { useNavigate } from "react-router-dom";
 import "./Opening.css";
 import logo from '../img/logo.png'
 
 function Welcome() {
+  const navigate = useNavigate();
   const [flip, setFlip] = useState(0);
   const [fadeIn, setFadeIn] = useState(false);
   const [canvasVisible, setCanvasVisible] = useState(true);
@@ -47,7 +49,7 @@ function Welcome() {
     };
 
     const initialDrawing = () => {
-      ctx.fillStyle = "#121212";
+      ctx.fillStyle = "#212121";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.strokeStyle = "rgb(245, 245, 245)";
     };
@@ -87,6 +89,7 @@ function Welcome() {
     if (continueAction) {
       console.log("Action continued!");
       setFadeoutText(true);
+      navigate("/home");
     }
   };
 

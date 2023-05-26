@@ -1,4 +1,5 @@
 import './Title.css'
+import {motion as m} from 'framer-motion';
 
 function Title() {
     return (
@@ -12,14 +13,19 @@ function Title() {
                 </defs>
             </svg>
 
-        <div className="goo">
-            <h1>TAC</h1>
+        <m.div 
+        className="goo"
+        animate={{x: 0}}
+        initial={{x: "20%"}}
+        transition={{delay: 0, duration: 1}}
+        >
+            <h1 className="h1">TAC</h1>
             <div className="drop"></div>
             <div className="drop"></div>
             <div className="drop"></div>
             <div className="drop"></div>
             <div className="drop"></div>
-        </div>
+        </m.div>
     </div>
 );
 }

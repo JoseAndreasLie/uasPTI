@@ -3,6 +3,8 @@ import ColorPicker from "./button";
 import bucket from "./bucketInfo";
 import "./colorPicker.css";
 import { createNoise2D } from "simplex-noise"; // Import the createNoise2D function from the library
+import {motion as m} from "framer-motion";
+
 
 function BucketColorPicker() {
   const [selectedColor, setSelectedColor] = useState(bucket[0]);
@@ -132,10 +134,15 @@ function BucketColorPicker() {
   
 
   return (
-    <div>
-      <h2>
+    <m.div
+    initial={{y: "80%"}}
+    animate={{y: 0}}
+    transition={{duration: 0.75, ease: "easeOut"}}
+    exit={{opacity: 1}}
+    >
+      <h1>
         <center>Choose any color</center>
-      </h2>
+      </h1>
       <div id="imgcenter">
         <img src={selectedColor.img} alt="" id="imgSize" />
       </div>
@@ -145,7 +152,7 @@ function BucketColorPicker() {
       <div>
         <ColorPicker onColorChange={handleColorChange} />
       </div>
-    </div>
+    </m.div>
   );
 }
 

@@ -1,38 +1,51 @@
-
 body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .background{
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
+}
+
+.background{
     height: 100vh;
-  }
-  
-  .intro{
+}
+
+.intro{
     background-color: #212121;
-  }
-  
-  .bucket{
+}
+
+.bucket{
     background-color: #f7f0ea;
-  }
-  
-  .galeri{
+}
+
+.galeri{
     background-color: #212121;
-  }
-  
-  .paint{
-    background-color: #f7f0ea;
-  }
-  
-  .water{
+}
+
+.water{
     padding-top: 120px; 
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
-  }
+}
+
+.motivasion{
+    position: relative;
+    z-index: 1;
+}
+
+.titleGaleri{
+    position: absolute;
+    top: 210vh;
+    left: 42vw;
+    color: #f7f0ea;
+    text-align: center;
+}
+
+.isiGaleri{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    top: 225vh;
+    left: 1vw;
+    gap: 20px;
+}
