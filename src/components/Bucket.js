@@ -1,4 +1,4 @@
-import './Bucket.css'
+import '../styles/Bucket.css';
 import {motion as m} from 'framer-motion';
 import {useInView} from 'react-intersection-observer';
 import {useEffect} from 'react';

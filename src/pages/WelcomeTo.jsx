@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import { useNavigate } from "react-router-dom";
-import "./Opening.css";
+import "../styles/Opening.css";
 import logo from '../img/logo.png'
 
 function Welcome() {

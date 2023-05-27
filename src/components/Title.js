@@ -1,4 +1,4 @@
-import './Title.css'
+import '../styles/Title.css'
 import {motion as m} from 'framer-motion';
 
 function Title() {

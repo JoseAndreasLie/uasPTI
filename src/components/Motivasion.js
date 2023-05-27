@@ -1,4 +1,4 @@
-import './Motivasion.css';
+import '../styles/Motivasion.css';
 
 function Motivasion(){
     return(

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Product.scss';
+import '../styles/Product.scss';
 import Swiper from 'swiper';
 import New from '../img/blackpaint.png';
 import Background from '../img/blackPaint.avif';

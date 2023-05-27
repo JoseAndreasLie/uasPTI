@@ -1,4 +1,4 @@
-import './Home.css';
+import '../styles/Home.css';
 import Title from '../components/Title';
 import Motivasion from '../components/Motivasion';
 import Bucket from '../components/Bucket';

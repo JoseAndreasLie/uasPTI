@@ -5,46 +5,61 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import BucketColorPicker from '../BucketColorPicker/BucketColorPicker';
-import Aboutus from '../aboutus/Aboutus';
-import Welcome from '../OpeningWebsite/WelcomeTo';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import BucketColorPicker from '../pages/BucketColorPicker';
+import Aboutus from '../pages/Aboutus';
+import Welcome from '../pages/WelcomeTo';
 import Home from '../pages/Home';
-import Product from './Product';
-import ComingSoon from './ComingSoon';
+import Product from '../pages/Product';
+import ComingSoon from '../pages/ComingSoon';
+import Editor from '../pages/Editor';
+import ToHex from '../pages/ToHex';
+import ToName from '../pages/ToName';
+import ToRgb from '../pages/ToRgb';
 
 function Navbar1() {
     return (
         <Router>
-        <div>
-            <Navbar bg="custom-color" variant="dark" fixed="top" style={{ backgroundColor: '#212121' }} expand="lg">
-            <Container fluid>
-                <Navbar.Brand as={Link} to="/start">
-                    <img src={logo} style={{height: '30px', width: '30px'}}/>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
-                <Nav className="me-auto my-2 my-lg-0 mx-auto" style={{ maxHeight: '100px'}} navbarScroll>
-                    <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/color">Our Color</Nav.Link>
-                    <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-                    <Nav.Link as={Link} to="/new">New Product</Nav.Link>
-                </Nav>
-                <Button variant="outline-success">Draw</Button>
-                </Navbar.Collapse>
-            </Container>
-            </Navbar>
-        </div>
-        <Routes>
-            <Route path="/start" element={<Welcome />} />
-            <Route path="/color" element={<BucketColorPicker />} />
-            <Route path="/about" element={<Aboutus />} />
-            <Route path="/home" element={<Home />} /> 
-            <Route path="/new" element={<Product />} />
-            <Route path="/coming" element={<ComingSoon />} />
-        </Routes>
+            <div>
+                <Navbar bg="custom-color" variant="dark" fixed="top" style={{ backgroundColor: '#212121' }} expand="lg">
+                    <Container fluid>
+                        <Navbar.Brand as={Link} to="/">
+                            <img src={logo} style={{ height: '30px', width: '30px' }} alt="Logo" />
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Collapse id="navbarScroll">
+                            <Nav className="me-auto my-2 my-lg-0 mx-auto" style={{ maxHeight: '100px' }} navbarScroll>
+                                <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                                <Nav.Link as={Link} to="/color">Our Color</Nav.Link>
+                                <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                                <Nav.Link as={Link} to="/new">New Product</Nav.Link>
+                                <NavDropdown title="Converter" id="basic-nav-dropdown">
+                                    <NavDropdown.Item as={Link} to="/convertH">Color to Hex</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/convertN">Color to Name</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/convertR">Color to RGB</NavDropdown.Item>
+                                </NavDropdown>
+                            </Nav>
+                            <Button variant="outline-success">Draw</Button>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+            </div>
+            <Routes>
+                <Route path="/" element={<Welcome />} />
+                <Route path="/color" element={<BucketColorPicker />} />
+                <Route path="/about" element={<Aboutus />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/new" element={<Product />} />
+                <Route path="/coming" element={<ComingSoon />} />
+                <Route path="/draw" element={<Editor />} />
+                <Route path="/convertH" element={<ToHex />} />
+                <Route path="/convertN" element={<ToName />} />
+                <Route path="/convertR" element={<ToRgb />} />
+            </Routes>
         </Router>
-);
+    );
 }
 
 export default Navbar1;

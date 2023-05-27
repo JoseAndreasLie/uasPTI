@@ -1,4 +1,4 @@
-import './Galeri.css';
+import '../styles/Galeri.css';
 
 
 function Galeri(nama) {
