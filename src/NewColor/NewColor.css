@@ -1,0 +1,132 @@
+#HiddenColor {
+  position: relative; /* Add position:relative to create a stacking context */
+  height: 100vh;
+  overflow: hidden;
+}
+
+#newColor {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Increase the z-index value to bring the button to the front */
+}
+
+#NewColorText {
+  color: white;
+  margin-top: 350px;
+  vertical-align: middle;
+  position: relative; /* Add position:relative to create a stacking context */
+  z-index: 2; /* Increase the z-index value to bring the text above the button */
+}
+
+#Scenery {
+  position: relative; /* Add position:relative to create a stacking context */
+  width: 100%;
+  margin-top: -100px;
+  z-index: 0; /* Set a lower z-index value to keep the scenery behind the text */
+}
+
+#ChangeScenery {
+  position: fixed;
+  display: block;
+  margin-top: -800px;
+  margin-left: 700px; 
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+#FlexBucket {
+  position: fixed;
+  display: flex;
+  margin-top: -300px;
+  margin-left: 150px;
+  margin-right: auto;
+ 
+  
+}
+
+#flexBucketText1 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto 170px 340px auto;
+  column-gap: 150px;
+  margin-top: 50px;
+  margin-left: 230px;
+  margin-right: auto;
+  
+}
+
+#flexBucketText2 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto 430px auto;
+  column-gap: 100px;
+  margin-top: 50px;
+  margin-left: 265px;
+  margin-right: auto;
+  
+}
+
+#flexBucketText3 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 305px;
+  margin-top: 50px;
+  margin-left: 250px;
+  margin-right: auto;
+  
+}
+
+#flexBucketText4 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto auto 180px auto;
+  column-gap: 240px;
+  margin-top: 50px;
+  margin-left: 270px;
+  margin-right: auto;
+  
+}
+
+#flexBucketText5 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto 550px 0px ;
+  column-gap: 95px;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: auto;
+  
+}
+
+#NewColorBucket{
+  width: 400px;
+  height: auto;
+}
+
+
