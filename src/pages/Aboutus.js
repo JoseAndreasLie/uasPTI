@@ -10,12 +10,14 @@ import KHARIS from '../img/KHARIS-small.png';
 function Aboutus() {
 
   return (
-    <div>
-        
+    <div className="AUmain">
+      <div className="AUpc">
       <m.p className="AUp" 
       initial={{opacity:0}} 
       animate={{opacity:1}} 
       transition={{ duration:1, ease:"easeOut"}} >LJORK'S TEAM</m.p>
+      </div>
+
         <m.div className="AUmain" 
         initial={{opacity:0}} 
         animate={{opacity:1}} 
@@ -25,31 +27,34 @@ function Aboutus() {
         <div className="AUcolumn">
             <div className="AUcard">
           <img src={LEO} />
-          <h3>Leo</h3>
+          <h3>Leonardo Tyoes Huibu</h3>
           <h3>00000065503</h3>
-          <p>Si Leo adalah Seorang Leo</p>
+          <p>K E J U</p>
           </div> 
         </div>
 
         <div className="AUcolumn">
         <div className="AUcard">
         <img src={JOSE} />
-          <h3>Jose</h3>
+          <h3>Jose Andreas Lie</h3>
           <h3>00000067097</h3>
-          <p>Si Jose adalah Seorang Jose</p>
+          <p>A.k.a. José</p>
           </div>
         </div>
-
+    
         <div className="AUcolumn">
         <div className="AUcard">
         <img src={OWEN} />
-          <h3>Owen</h3>
+          <h3>Owen Christian Cahyadi</h3>
           <h3>00000067055</h3>
           <p>Lorem Ipsum</p>
           </div>
         </div>
 
-        <div className="AUcolumn">
+        </div>
+    <div className="AUrow2">
+
+        <div className="AUcolumn2">
         <div className="AUcard">
         <img src={REY} />
           <h3>Reynard</h3>
@@ -58,16 +63,16 @@ function Aboutus() {
           </div>
         </div>
 
-        <div className="AUcolumn">
+        <div className="AUcolumn2">
         <div className="AUcard">
         <img src={KHARIS} />
-          <h3>Kharis</h3>
+          <h3>Kristoforus Kharis P. S.</h3>
           <h3>00000067127</h3>
           <p>Lorem Ipsum</p>
           </div>
         </div>
       </div>
-    </m.div>
+     </m.div>
     </div>
   );
 }
