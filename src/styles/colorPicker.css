@@ -1,11 +1,17 @@
+.BcolorPicker{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: -25px;
+}
 #Flex {
     margin-left: 100px;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(3, 70px);
-  justify-content: space-between;
-  align-items: center;
-  grid-gap: 3px; /* Adjust the value to your preference */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 70px);
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 3px; /* Adjust the value to your preference */
   }
   
   /* Example button styles */
@@ -230,5 +236,15 @@
     width: 370px;
   }
 
- 
+@media(max-width:720px){
+  #Flex {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 70px);
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 3px; /* Adjust the value to your preference */
+  }
+}
   

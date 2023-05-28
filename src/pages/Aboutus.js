@@ -1,11 +1,11 @@
 import React from "react";
 import {easeOut, motion as m} from "framer-motion"
 import '../styles/Aboutus.css';
-import LEO from '../../public/us/LEO-small.png';
-import JOSE from '../../public/us/JOSE-small.png';
-import OWEN from '../../public/us/OWEN-small.png';
-import REY from '../../public/us/REY-small.png';
-import KHARIS from '../../public/us/KHARIS-small.png';
+import LEO from '../img/LEO-small.png';
+import JOSE from '../img/JOSE-small.png';
+import OWEN from '../img/OWEN-small.png';
+import REY from '../img/REY-small.png';
+import KHARIS from '../img/KHARIS-small.png';
 
 function Aboutus() {
 

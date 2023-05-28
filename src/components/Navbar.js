@@ -6,7 +6,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 import BucketColorPicker from '../pages/BucketColorPicker';
 import Aboutus from '../pages/Aboutus';
@@ -18,6 +17,7 @@ import Editor from '../pages/Editor';
 import ToHex from '../pages/ToHex';
 import ToName from '../pages/ToName';
 import ToRgb from '../pages/ToRgb';
+import ColorScheme from '../pages/ColorScheme';
 
 function Navbar1() {
     return (
@@ -39,9 +39,10 @@ function Navbar1() {
                                     <NavDropdown.Item as={Link} to="/convertH">Color to Hex</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/convertN">Color to Name</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/convertR">Color to RGB</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/scheme">Color Scheme</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
-                            <Button variant="outline-success">Draw</Button>
+                            <Button as={Link} to="/draw" variant="outline-success">Draw</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
@@ -57,6 +58,7 @@ function Navbar1() {
                 <Route path="/convertH" element={<ToHex />} />
                 <Route path="/convertN" element={<ToName />} />
                 <Route path="/convertR" element={<ToRgb />} />
+                <Route path="/scheme" element={<ColorScheme /> }/>
             </Routes>
         </Router>
     );

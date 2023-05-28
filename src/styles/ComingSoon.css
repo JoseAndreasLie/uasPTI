@@ -46,3 +46,16 @@
 .text2{
     color: #89664C;
 }
+
+@media(max-width: 720px){
+    .soon{
+        position: absolute;
+        background-image: url("../img/comingSoon.gif");
+        top: 1vh;
+        left: 26vw !important;
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+}

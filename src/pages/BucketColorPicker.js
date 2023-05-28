@@ -127,7 +127,13 @@ function BucketColorPicker() {
   };
 
   return (
-    <m.div initial={{ y: '80%' }} animate={{ y: 0 }} transition={{ duration: 0.75, ease: 'easeOut' }} exit={{ opacity: 1 }}>
+    <m.div 
+    className="BcolorPicker"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 0.75, ease: "easeOut"}}
+    exit={{opacity: 1}}
+    >
       <h1>
         <center>Choose any color</center>
       </h1>
@@ -137,7 +143,7 @@ function BucketColorPicker() {
       <h2>
         <center>{selectedColor.name}</center>
       </h2>
-      <div>
+      <div className="pilihWarna">
         <ColorPicker onColorChange={handleColorChange} />
       </div>
     </m.div>

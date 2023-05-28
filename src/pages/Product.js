@@ -6,7 +6,7 @@ import Background from '../img/blackPaint.avif';
 import { useNavigate } from 'react-router-dom';
 
 const Product = () => {
-    const navigate = useNavigate();
+    const navigate = useNavigate();  
 
     useEffect(() => {
         initSwiper();

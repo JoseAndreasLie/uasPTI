@@ -49,3 +49,29 @@ body {
     left: 1vw;
     gap: 20px;
 }
+
+@media (max-width: 720px){
+    .water{
+        padding-top: 90px !important; 
+        display: grid;
+        grid-template-columns: auto !important;
+        justify-content: space-around;
+    }
+
+    .titleGaleri{
+        position: absolute;
+        top: 205vh;
+        left: 37vw;
+        color: #f7f0ea;
+        text-align: center;
+    }
+
+    .isiGaleri{
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto !important;
+        top: 213vh !important;
+        left: 30vw !important;
+        gap: 15px !important;
+    }
+}
