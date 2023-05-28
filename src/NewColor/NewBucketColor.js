@@ -2,7 +2,7 @@ const newColorBucket = [
     {
         number: 1,
         name:"Wintergreen Dream",
-        img:"./Image/8_BucketPaint_WintergreenDreampng.png",
+        img:"./BucketImage/8_BucketPaint_WintergreenDreampng.png",
         style:"flexBucketText1",
         color:"#4e8580",
         meaning:""
@@ -10,7 +10,7 @@ const newColorBucket = [
     {
         number: 2,
         name:"Emerald Green",
-        img:"./Image/17_BucketPaint_EmeraldGreen.png",
+        img:"./BucketImage/17_BucketPaint_EmeraldGreen.png",
         style:"flexBucketText1",
         color:"#5FBB9C",
         meaning:""
@@ -18,7 +18,7 @@ const newColorBucket = [
     {
         number: 3,
         name:"Brunswick Green",
-        img:"./Image/18_BucketPaint_BrunswickGreen.png",
+        img:"./BucketImage/18_BucketPaint_BrunswickGreen.png",
         style:"flexBucketText1",
         color:"#17594b",
         meaning:""
@@ -26,7 +26,7 @@ const newColorBucket = [
     {
         number: 4,
         name:"Pewter Blue",
-        img:"./Image/9_BucketPaint_PewterBlue.png",
+        img:"./BucketImage/9_BucketPaint_PewterBlue.png",
         style:"flexBucketText2",
         color:"#80b6b8",
         meaning:""
@@ -34,7 +34,7 @@ const newColorBucket = [
     {
         number: 5,
         name:"Dark Cerulean",
-        img:"./Image/10_BucketPaint_DarkCerulean.png",
+        img:"./BucketImage/10_BucketPaint_DarkCerulean.png",
         style:"flexBucketText2",
         color:"#193b7a",
         meaning:""
@@ -42,7 +42,7 @@ const newColorBucket = [
     {
         number: 6,
         name:"Space Cadet",
-        img:"./Image/11_BucketPaint_SpaceCadet.png",
+        img:"./BucketImage/11_BucketPaint_SpaceCadet.png",
         style:"flexBucketText2",
         color:"#11345a",
         meaning:""
@@ -50,7 +50,7 @@ const newColorBucket = [
     {
         number: 7,
         name:"Dust Storm",
-        img:"./Image/13_BucketPaint_DustStorm.png",
+        img:"./BucketImage/13_BucketPaint_DustStorm.png",
         style:"flexBucketText3",
         color:"#f0d0c3",
         meaning:""
@@ -58,7 +58,7 @@ const newColorBucket = [
     {
         number: 8,
         name:"Buff",
-        img:"./Image/19_BucketPaint_Buff.png",
+        img:"./BucketImage/19_BucketPaint_Buff.png",
         style:"flexBucketText3",
         color:"#f1d484",
         meaning:""
@@ -66,7 +66,7 @@ const newColorBucket = [
     {
         number: 9,
         name:"Dandelion",
-        img:"./Image/20_BucketPaint_Dandelion.png",
+        img:"./BucketImage/20_BucketPaint_Dandelion.png",
         style:"flexBucketText3",
         color:"#f4d82f",
         meaning:""
@@ -74,7 +74,7 @@ const newColorBucket = [
     {
         number: 10,
         name:"Candy Pink",
-        img:"./Image/14_BucketPaint_CandyPink.png",
+        img:"./BucketImage/14_BucketPaint_CandyPink.png",
         style:"flexBucketText4",
         color:"#e8737c",
         meaning:""
@@ -82,7 +82,7 @@ const newColorBucket = [
     {
         number: 11,
         name:"Upsell Red",
-        img:"./Image/15_BucketPaint_UpsellRed.png",
+        img:"./BucketImage/15_BucketPaint_UpsellRed.png",
         style:"flexBucketText4",
         color:"#b81c2a",
         meaning:""
@@ -90,7 +90,7 @@ const newColorBucket = [
     {
         number: 12,
         name:"Sienna",
-        img:"./Image/16_BucketPaint_Sienna.png",
+        img:"./BucketImage/16_BucketPaint_Sienna.png",
         style:"flexBucketText4",
         color:"#882D17",
         meaning:""
@@ -98,7 +98,7 @@ const newColorBucket = [
     {
         number: 13,
         name:"Linen",
-        img:"./Image/2_BucketPaint_Linen.png",
+        img:"./BucketImage/2_BucketPaint_Linen.png",
         style:"flexBucketText5",
         color:"#F4EEE5",
         meaning:""
@@ -106,7 +106,7 @@ const newColorBucket = [
     {
         number: 14,
         name:"Pastel Gray",
-        img:"./Image/3_BucketPaint_PastelGray.png",
+        img:"./BucketImage/3_BucketPaint_PastelGray.png",
         style:"flexBucketText5",
         color:"#d5d2bf",
         meaning:""
@@ -114,7 +114,7 @@ const newColorBucket = [
     {
         number: 15,
         name:"khaki",
-        img:"./Image/4_BucketPaint_Khaki.png",
+        img:"./BucketImage/4_BucketPaint_Khaki.png",
         style:"flexBucketText5",
         color:"#c7b897",
         meaning:""
