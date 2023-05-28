@@ -36,7 +36,7 @@ function Aboutus() {
         <img src={JOSE} />
           <h3>Jose</h3>
           <h3>00000067097</h3>
-          <p>Si Jose adalah Seorang Jose</p>
+          <p>K E J U</p>
           </div>
         </div>
 
