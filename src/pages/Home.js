@@ -5,8 +5,10 @@ import Bucket from '../components/Bucket';
 import Galeri from '../components/Galeri';
 import whitebucket from '../img/whitebucket.png';
 import blackbucket from '../img/blackbucket.png';
+import bluebucket from '../img/blueBucket.png';
 import galeri1 from '../img/galeriPutih.jpg';
 import galeri2 from '../img/galeriHitam.jpg';
+import galeri3 from '../img/galeriBiru.webp';
 import {motion as m} from 'framer-motion';
 
 function Home() {
@@ -38,7 +40,9 @@ function Home() {
                     title="Snow White"
                 />
                 <Galeri 
-                    
+                    bucket={bluebucket}
+                    imgUrl={galeri3}
+                    title="Dark Curelean"
                 />
                 <Galeri 
                     bucket={blackbucket}

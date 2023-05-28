@@ -79,3 +79,23 @@ figure.snip1321:hover:after{
     width: 200px;
     height: 200px;
 }
+
+@media(max-width: 720px){
+    figure.snip1321 .tembok {
+        width: 250px;
+        height: 155px;
+        vertical-align: top;
+    }
+
+    .ember{
+        margin-top: 20px !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    figure.snip1321 h2 {
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 20px !important;
+    }
+}

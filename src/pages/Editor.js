@@ -24,44 +24,44 @@ export default function Editor() {
 
   return (
     <div className="gambar">
-    <div id="editor">
-      <h1 className="drawTitle">Pixel Editor</h1>
-      {hideDrawingPanel && <h2 className="size">Enter Panel Dimensions</h2>}
-      {hideDrawingPanel && (
-        <div id="options">
-          <div className="option">
-            <input
-              type="number"
-              className="panelInput"
-              defaultValue={panelWidth}
-              onChange={(e) => {
-                setPanelWidth(e.target.value);
-              }}
-            />
-            <span>Width</span>
+      <div id="editor">
+        <h1 className="drawTitle">Pixel Editor</h1>
+        {hideDrawingPanel && <h2 className="size">Enter Panel Dimensions</h2>}
+        {hideDrawingPanel && (
+          <div id="options">
+            <div className="option">
+              <input
+                type="number"
+                className="panelInput"
+                defaultValue={panelWidth}
+                onChange={(e) => {
+                  setPanelWidth(e.target.value);
+                }}
+              />
+              <span>Width</span>
+            </div>
+            <div className="option">
+              <input
+                type="number"
+                className="panelInput"
+                defaultValue={panelHeight}
+                onChange={(e) => {
+                  setPanelHeight(e.target.value);
+                }}
+              />
+              <span>Height</span>
+            </div>
           </div>
-          <div className="option">
-            <input
-              type="number"
-              className="panelInput"
-              defaultValue={panelHeight}
-              onChange={(e) => {
-                setPanelHeight(e.target.value);
-              }}
-            />
-            <span>Height</span>
-          </div>
-        </div>
-      )}
+        )}
 
-      <button onClick={initializeDrawingPanel} className="button">
-        {buttonText}
-      </button>
+        <button onClick={initializeDrawingPanel} className="button">
+          {buttonText}
+        </button>
 
-      {hideOptions && <CirclePicker color={selectedColor} onChangeComplete={changeColor} />}
+        {hideOptions && <CirclePicker color={selectedColor} onChangeComplete={changeColor} />}
 
-      {hideOptions && <DrawingPanel width={panelWidth} height={panelHeight} selectedColor={selectedColor} />}
-    </div>
+        {hideOptions && <DrawingPanel width={panelWidth} height={panelHeight} selectedColor={selectedColor} />}
+      </div>
     </div>
   );
 }
