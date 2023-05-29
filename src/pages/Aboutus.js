@@ -59,7 +59,7 @@ function Aboutus() {
         <img src={REY} />
           <h3>Reynard</h3>
           <h3>00000067065</h3>
-          <p>A.k.a. Rey</p>
+          <p>C H A D</p>
           </div>
         </div>
 
