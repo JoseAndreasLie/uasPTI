@@ -100,7 +100,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 10px 20px 0 20px;
     border-radius: 0.6em;
     color: black;
-    cursor: pointer;
+    cursor: default;
 }
 
 .AUcard img{
