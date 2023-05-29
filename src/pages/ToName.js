@@ -33,7 +33,7 @@ const ColorConverter = () => {
                     <div className="col-md-12 col-sm-12">
                     <div className="header-brand">
                         <a className="nbp" href="#">TAC</a>
-                        <span className="brand-small">Color Picker to Hex Color Converter</span>
+                        <span className="brand-small">Color Picker to Name Color Converter</span>
                     </div>
                     </div>
                 </div>
