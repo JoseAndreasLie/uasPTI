@@ -209,10 +209,14 @@ function NewColorCode() {
             y: waves[i].drips[c],
           });
         }
-
+        try{
+          context.fillStyle = context.createPattern(SceneryRef.current, 'repeat');
+        } catch (error) {
+          console.log(error);
+        }
         context.beginPath();
         context.strokeStyle = SceneryRef.current;
-        context.fillStyle = context.createPattern(SceneryRef.current, 'repeat');
+        // context.fillStyle = context.createPattern(SceneryRef.current, 'repeat');
         context.moveTo(0, 0);
         context.lineTo(points[0].x, points[0].y);
 
@@ -347,9 +351,14 @@ function NewColorCode() {
                     });
                   }
 
+                  try{
+                    context.fillStyle = context.createPattern(SceneryRef.current, 'repeat');
+                  } catch(error){
+                    console.log(error);
+                  }
                   context.beginPath();
                   context.strokeStyle = SceneryRef.current;
-                  context.fillStyle = context.createPattern(SceneryRef.current, 'repeat');
+                  // context.fillStyle = context.createPattern(SceneryRef.current, 'repeat');
                   context.moveTo(0, 0);
                   context.lineTo(points[0].x, points[0].y);
 
