@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ColorPicker from '../components/button';
 import bucket from '../components/bucketInfo';
 import '../styles/colorPicker.css';
@@ -127,13 +127,7 @@ function BucketColorPicker() {
   };
 
   return (
-    <m.div 
-    className="BcolorPicker"
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    transition={{duration: 0.75, ease: "easeOut"}}
-    exit={{opacity: 1}}
-    >
+    <m.div className="BcolorPicker" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }} exit={{ opacity: 1 }}>
       <h1>
         <center>Choose any color</center>
       </h1>

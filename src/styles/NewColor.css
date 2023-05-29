@@ -1,5 +1,5 @@
 #HiddenColor {
-  position: relative; /* Add position:relative to create a stacking context */
+  position: fixed; /* Add position:relative to create a stacking context */
   height: 100vh;
   overflow: hidden;
 }
@@ -34,54 +34,53 @@
   position: fixed;
   display: block;
   margin-top: -680px;
-  margin-left: 630px; 
+  margin-left: 630px;
   padding: 10px 20px;
   background-color: #ccc;
   border: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  
 }
 
 #ChangeScenery {
   position: fixed;
   display: block;
   margin-top: -680px;
-  margin-left: 610px; 
+  margin-left: 610px;
   padding: 10px 20px;
   appearance: button;
   background-color: transparent;
   background-image: linear-gradient(to bottom, #fff, #f8eedb);
   border: 0 solid #e5e7eb;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-sizing: border-box;
   color: #482307;
   column-gap: 1rem;
   cursor: pointer;
   display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 100%;
   font-weight: 700;
   line-height: 24px;
   outline: 2px solid transparent;
   text-align: center;
   text-transform: none;
-  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
 #ChangeScenery:active {
   background-color: #f3f4f6;
-  box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+  box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
   transform: translateY(0.125rem);
 }
 
 #ChangeScenery:focus {
-  box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+  box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
 #FlexBucket {
@@ -90,8 +89,6 @@
   margin-top: -300px;
   margin-left: 70px;
   margin-right: auto;
-
-  
 }
 
 #flexBucketText1 {
@@ -105,7 +102,6 @@
   margin-top: 50px;
   margin-left: 180px;
   margin-right: auto;
-  
 }
 
 #flexBucketText2 {
@@ -119,7 +115,6 @@
   margin-top: 50px;
   margin-left: 190px;
   margin-right: auto;
-  
 }
 
 #flexBucketText3 {
@@ -133,7 +128,6 @@
   margin-top: 50px;
   margin-left: 180px;
   margin-right: auto;
-  
 }
 
 #flexBucketText4 {
@@ -147,7 +141,6 @@
   margin-top: 50px;
   margin-left: 220px;
   margin-right: auto;
-  
 }
 
 #flexBucketText5 {
@@ -156,17 +149,14 @@
   text-align: center;
   position: fixed;
   display: grid;
-  grid-template-columns: auto 550px 0px ;
+  grid-template-columns: auto 550px 0px;
   column-gap: 95px;
   margin-top: 50px;
   margin-left: 220px;
   margin-right: auto;
-  
 }
 
-#NewColorBucket{
+#NewColorBucket {
   width: 400px;
   height: auto;
 }
-
-

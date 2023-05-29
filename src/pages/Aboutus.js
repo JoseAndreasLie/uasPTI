@@ -38,7 +38,7 @@ function Aboutus() {
         <img src={JOSE} />
           <h3>Jose Andreas Lie</h3>
           <h3>00000067097</h3>
-          <p>A.k.a. José</p>
+          <p>A.k.a. José (Spanish)</p>
           </div>
         </div>
     
@@ -47,7 +47,7 @@ function Aboutus() {
         <img src={OWEN} />
           <h3>Owen Christian Cahyadi</h3>
           <h3>00000067055</h3>
-          <p>A.k.a. Owen</p>
+          <p>Akuh wibu</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ function Aboutus() {
         <img src={KHARIS} />
           <h3>Kristoforus Kharis P. S.</h3>
           <h3>00000067127</h3>
-          <p>A.k.a Kharis</p>
+          <p>Sorang anak yang memiliki kekuatan halu</p>
           </div>
         </div>
       </div>
