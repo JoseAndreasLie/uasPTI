@@ -47,7 +47,7 @@ function Aboutus() {
         <img src={OWEN} />
           <h3>Owen Christian Cahyadi</h3>
           <h3>00000067055</h3>
-          <p>Lorem Ipsum</p>
+          <p>A.k.a. Owen</p>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ function Aboutus() {
         <img src={REY} />
           <h3>Reynard</h3>
           <h3>00000067065</h3>
-          <p>Lorem Ipsum</p>
+          <p>A.k.a. Rey</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ function Aboutus() {
         <img src={KHARIS} />
           <h3>Kristoforus Kharis P. S.</h3>
           <h3>00000067127</h3>
-          <p>Lorem Ipsum</p>
+          <p>A.k.a Kharis</p>
           </div>
         </div>
       </div>

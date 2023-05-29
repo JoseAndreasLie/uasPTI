@@ -1,9 +1,10 @@
   import React, { useEffect, useRef, useState } from "react";
   import { createNoise2D } from "simplex-noise";
   import anime from "animejs";
-  import "./NewColor.css";
-  import newColorBucket from "./NewBucketColor";
-  import scenery from "./sceneryInfo";
+  import "../styles/NewColor.css";
+  import newColorBucket from "../components/NewBucketColor";
+  import scenery from "../components/sceneryInfo";
+
 
 
   function NewColorCode() {

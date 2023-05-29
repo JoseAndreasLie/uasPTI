@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import '../styles/editor.scss';
 import { CirclePicker } from 'react-color';
 import DrawingPanel from '../components/DrawingPanel';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Editor() {
+  const navigate = useNavigate();
   const [panelWidth, setPanelWidth] = useState(16);
   const [panelHeight, setPanelHeight] = useState(16);
   const [hideOptions, setHideOptions] = useState(false);
@@ -61,6 +64,9 @@ export default function Editor() {
         {hideOptions && <CirclePicker color={selectedColor} onChangeComplete={changeColor} />}
 
         {hideOptions && <DrawingPanel width={panelWidth} height={panelHeight} selectedColor={selectedColor} />}
+      </div>
+      <div>
+        <button className="send" onClick={()=> navigate("/send")}>Send</button>
       </div>
     </div>
   );

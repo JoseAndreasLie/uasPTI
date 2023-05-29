@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+#form-container {
+  max-width: 350px;
+  margin-top:20vh;
+  margin-left: 37vw;
+  padding: 0 1% 0 1%;
+}
+
+form {
+  max-width: 100%;
+}
+
+input {
+  font-family: 'Droid Sans', helvetica , sans-serif;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-indent: 5px;
+  width: 90%;
+  height: 2rem;
+  background: #ecf0f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  margin: 2%;
+  padding: 1%;
+}
+
+input:focus {
+  opacity: .6;
+}
+
+textarea {
+  font-family: 'Droid Sans', helvetica, sans-serif;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  line-height: 2;
+  text-indent: 5px;
+  width: 90%;
+  height: 9rem;
+  background: #ecf0f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  margin: 2%;
+  padding: 1%;
+}
+
+textarea:focus {
+  opacity: .6;
+}
+
+.bounceIn {
+    position: absolute;
+    top: 3vh;
+    left: 15vw;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bounceIn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 3vh;
+  left: 15vw;
+}
+
+@media (min-width: 768px) {
+  .bounceIn {
+    padding: 0.25em 0.75em;
+  }
+}

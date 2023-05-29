@@ -18,6 +18,8 @@ import ToHex from '../pages/ToHex';
 import ToName from '../pages/ToName';
 import ToRgb from '../pages/ToRgb';
 import ColorScheme from '../pages/ColorScheme';
+import Gmail from './Gmail';
+import NewColor from '../pages/NewColorCode';
 
 function Navbar1() {
     return (
@@ -35,6 +37,7 @@ function Navbar1() {
                                 <Nav.Link as={Link} to="/color">Our Color</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                                 <Nav.Link as={Link} to="/new">New Product</Nav.Link>
+                                <Nav.Link as={Link} to="/newColor">New Color</Nav.Link>
                                 <NavDropdown title="Converter" id="basic-nav-dropdown">
                                     <NavDropdown.Item as={Link} to="/convertH">Color to Hex</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/convertN">Color to Name</NavDropdown.Item>
@@ -59,6 +62,8 @@ function Navbar1() {
                 <Route path="/convertN" element={<ToName />} />
                 <Route path="/convertR" element={<ToRgb />} />
                 <Route path="/scheme" element={<ColorScheme /> }/>
+                <Route path="/send" element={<Gmail />} />
+                <Route path="/newColor" element={<NewColor />} />
             </Routes>
         </Router>
     );
