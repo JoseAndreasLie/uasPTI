@@ -8,7 +8,7 @@ function Galeri(nama) {
     <figcaption>
       <img className="ember" src={nama.bucket} alt=""/>
       <h2>{nama.title}</h2>
-    </figcaption><a href="#"></a>
+    </figcaption>
   </figure>
   </div>
   );

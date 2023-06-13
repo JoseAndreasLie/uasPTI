@@ -77,3 +77,22 @@ canvas {
   font-weight: bold;
   user-select: none;
 }
+
+@media screen and (max-width:600px){
+  #welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px !important;
+    color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  #logo {
+    width: 390px !important;
+    margin-left: 0px; /* Half of the logo's width */
+  }
+}

@@ -41,9 +41,6 @@
     transition: all 0.8s ease;	
 }
 
-
-
-
 .img{
     -webkit-filter: sepia(100%);
 	filter: sepia(100%);
@@ -58,19 +55,7 @@
 	filter: sepia(0);
 }
 
-@media (max-width: 720px){
-    .content .nama{
-        font-family: 'Montserrat', sans-serif;
-        color: #212121;
-        text-transform: uppercase;
-        position: absolute;
-        top: 104vh !important;
-        left: 33vw !important;
-        user-select: none;
-        transform: translate(-50%, -50%);
-        opacity: 1;
-        transition: all 0.8s ease;	
-    }
+@media screen and (max-width:600px){
 
     .card1{
         margin-bottom: 40px !important;

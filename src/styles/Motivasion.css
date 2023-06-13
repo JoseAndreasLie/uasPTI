@@ -38,10 +38,17 @@
     }
 }
 
-@media (max-width: 720px){
+@media screen and (max-width:600px){
     .draw_text{
-        position: absolute;
-        top: 25vh !important;
-        left: 15vw !important;
+        display: flex;
+        padding-top: 170px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .p{
+        padding-top: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

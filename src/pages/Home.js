@@ -10,8 +10,29 @@ import galeri1 from '../img/galeriPutih.jpg';
 import galeri2 from '../img/galeriHitam.jpg';
 import galeri3 from '../img/galeriBiru.webp';
 import {motion as m} from 'framer-motion';
+import {useInView} from 'react-intersection-observer';
+import {useEffect} from 'react';
+import { useAnimation } from 'framer-motion';
 
 function Home() {
+    const {ref, inView} = useInView({
+        threshold: 0.2
+    });
+    const animation = useAnimation();
+
+    useEffect(() =>{
+        if(inView){
+            animation.start({
+                y:0,
+                transition:{
+                    type: 'keyframes', duration: 0.5, bounce: 0.3
+                }
+            });
+        }
+        if (!inView){
+            animation.start({y: '100vh'})
+        }
+    },[inView]);
     return (
         <m.div 
         className="App"
@@ -25,7 +46,8 @@ function Home() {
             <Title />
             
         </div>
-        <div className="background bucket">
+        <div ref={ref} className="background bucket">
+            <m.h2 animate={animation} className="nama">Our Product</m.h2>
             <div className="water">
             <Bucket imgUrl={whitebucket}/>
             <Bucket imgUrl={blackbucket}/>

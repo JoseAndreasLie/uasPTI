@@ -80,7 +80,7 @@ figure.snip1321:hover:after{
     height: 200px;
 }
 
-@media(max-width: 720px){
+@media screen and (max-width:600px){
     figure.snip1321 .tembok {
         width: 250px;
         height: 155px;

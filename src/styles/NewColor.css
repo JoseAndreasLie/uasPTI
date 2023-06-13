@@ -1,7 +1,12 @@
 #HiddenColor {
-  position: fixed; /* Add position:relative to create a stacking context */
+  position: fixed;
   height: 100vh;
   overflow: hidden;
+}
+
+:root {
+  --scenery-margin-left: 720px;
+  --scenery-margin-left-mobile: 500px;
 }
 
 #newColor {
@@ -12,42 +17,28 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1; /* Increase the z-index value to bring the button to the front */
+  z-index: 1;
 }
 
 #NewColorText {
   color: white;
   margin-top: 350px;
   vertical-align: middle;
-  position: relative; /* Add position:relative to create a stacking context */
-  z-index: 2; /* Increase the z-index value to bring the text above the button */
+  position: relative;
+  z-index: 2;
 }
 
 #Scenery {
-  position: relative; /* Add position:relative to create a stacking context */
+  position: relative;
   width: 100%;
   margin-top: -100px;
-  z-index: 0; /* Set a lower z-index value to keep the scenery behind the text */
+  z-index: 0;
 }
 
 #ChangeScenery {
   position: fixed;
-  display: block;
-  margin-top: -680px;
-  margin-left: 630px;
-  padding: 10px 20px;
-  background-color: #ccc;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#ChangeScenery {
-  position: fixed;
-  display: block;
-  margin-top: -680px;
-  margin-left: 610px;
+  margin-top: 600px;
+  margin-left: var(--scenery-margin-left);
   padding: 10px 20px;
   appearance: button;
   background-color: transparent;
@@ -64,7 +55,6 @@
   font-weight: 700;
   line-height: 24px;
   outline: 2px solid transparent;
-  text-align: center;
   text-transform: none;
   transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
@@ -87,20 +77,20 @@
   position: fixed;
   display: flex;
   margin-top: -300px;
-  margin-left: 70px;
+  margin-left: 170px;
   margin-right: auto;
 }
 
 #flexBucketText1 {
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
   position: fixed;
   display: grid;
-  grid-template-columns: auto 170px 340px auto;
+  grid-template-columns: auto 240px 160px 200px;
   column-gap: 200px;
   margin-top: 50px;
-  margin-left: 180px;
+  margin-left: 280px;
   margin-right: auto;
 }
 
@@ -110,23 +100,23 @@
   text-align: center;
   position: fixed;
   display: grid;
-  grid-template-columns: auto 430px auto;
+  grid-template-columns: auto 430px 180px;
   column-gap: 100px;
   margin-top: 50px;
-  margin-left: 190px;
+  margin-left: 280px;
   margin-right: auto;
 }
 
 #flexBucketText3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
   position: fixed;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 100px 70px auto;
   column-gap: 305px;
   margin-top: 50px;
-  margin-left: 180px;
+  margin-left: 320px;
   margin-right: auto;
 }
 
@@ -136,10 +126,10 @@
   text-align: center;
   position: fixed;
   display: grid;
-  grid-template-columns: auto auto 180px auto;
+  grid-template-columns: 120px 90px 120px auto;
   column-gap: 300px;
   margin-top: 50px;
-  margin-left: 220px;
+  margin-left: 300px;
   margin-right: auto;
 }
 
@@ -149,14 +139,26 @@
   text-align: center;
   position: fixed;
   display: grid;
-  grid-template-columns: auto 550px 0px;
+  grid-template-columns: auto 540px 0px;
   column-gap: 95px;
   margin-top: 50px;
-  margin-left: 220px;
+  margin-left: 320px;
   margin-right: auto;
 }
 
 #NewColorBucket {
   width: 400px;
   height: auto;
+}
+
+
+
+@media (max-width: 1100px) {
+  :root {
+    --scenery-margin-left: calc(var(--scenery-margin-left-mobile) - (1100px - 100vw)/2);
+  }
+  
+  #ChangeScenery {
+    margin-left: var(--scenery-margin-left);
+  }
 }

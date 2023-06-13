@@ -432,6 +432,7 @@ function NewColorCode() {
   }, [buttonClicked, sceneryChanged]);
 
   return (
+    <>
     <div id="HiddenColor">
       <canvas
         ref={canvasRef}
@@ -493,17 +494,9 @@ function NewColorCode() {
           }}
         />
       </div>
-      <div>
-        <button
-          id="ChangeScenery"
-          onClick={onClickChange2}
-          style={{
-            opacity: 0,
-          }}
-        >
-          Change
-        </button>
-      </div>
+
+       
+  
       <img
         ref={oldSceneryRef}
         src={scenery[currentoldSceneryIndex].src}
@@ -514,6 +507,16 @@ function NewColorCode() {
         }}
       />
     </div>
+    <button
+          id="ChangeScenery"
+          onClick={onClickChange2}
+          style={{
+            opacity: 0,
+          }}
+        >
+          Change
+        </button>
+    </>
   );
 }
 
