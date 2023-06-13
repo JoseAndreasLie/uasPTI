@@ -42,11 +42,11 @@ const Gmail = () => {
     return (
         <div id="form-container">
             <form action="#" autocomplete="on">
-                <h1>Send the Picture</h1>
+                <h1 className='titleSend'>Send the Picture</h1>
                 <input onChange={(event) => setNama(event.target.value)} className="name-box" type="text" name="name" placeholder="Name"/><br />
                 <input onChange={(event) => setEmail(event.target.value)} className="email-box" type="email" name="email" input="email" placeholder="Email"/><br />
                 <textarea onChange={(event) => setPesan(event.target.value)} className="message-box" placeholder="Message"></textarea><br />
-                <input type="file" onChange={(event) => setFile(event.target.files[0])} />
+                <input className='file' type="file" onChange={(event) => setFile(event.target.files[0])} />
                 <button  onClick={sendEmail} className="bounceIn" type="submit">Send</button>
             </form>
         </div>

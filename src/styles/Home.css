@@ -49,21 +49,21 @@ body {
 }
 
 .nama{
-    font-family: 'Montserrat', sans-serif;
+    position:relative;
+    top: 47vh;
     color: #212121;
 	text-transform: uppercase;
-    position: absolute;
-    top: 150vh;
-    left: 40vw;
     user-select: none;
     transform: translate(-50%, -50%);
     opacity: 1;
-    transition: all 0.8s ease;	
+    transition: all 0.8s ease;
+    text-align: center;
 }
 
 @media screen and (max-width:600px){
     .nama{
-        padding-top: 100px;
+        top: 0vh;
+        padding-top: 100px !important;
         color: #212121;
         text-transform: uppercase;
         text-align: center;
