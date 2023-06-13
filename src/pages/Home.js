@@ -32,7 +32,7 @@ function Home() {
             </div>
         </div>
         <div className="background galeri">
-            <h1 className="titleGaleri">Our Galeri</h1>
+            <h1 className="titleGaleri">Our Gallery</h1>
             <div className="isiGaleri">
                 <Galeri 
                     bucket={whitebucket}
