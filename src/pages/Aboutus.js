@@ -29,7 +29,7 @@ function Aboutus() {
           <img src={LEO} />
           <h3>Leonardo Tyoes Huibu</h3>
           <h3>00000065503</h3>
-          <p>K E J U</p>
+          <p>UX Designer</p>
           </div> 
         </div>
 
@@ -38,7 +38,7 @@ function Aboutus() {
         <img src={JOSE} />
           <h3>Jose Andreas Lie</h3>
           <h3>00000067097</h3>
-          <p>A.k.a. José (Spanish)</p>
+          <p>UX Designer</p>
           </div>
         </div>
     
@@ -47,7 +47,7 @@ function Aboutus() {
         <img src={OWEN} />
           <h3>Owen Christian Cahyadi</h3>
           <h3>00000067055</h3>
-          <p>Akuh wibu</p>
+          <p>Bug & Game Tester</p>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ function Aboutus() {
         <img src={REY} />
           <h3>Reynard</h3>
           <h3>00000067065</h3>
-          <p>C H A D</p>
+          <p>UI Designer</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ function Aboutus() {
         <img src={KHARIS} />
           <h3>Kristoforus Kharis P. S.</h3>
           <h3>00000067127</h3>
-          <p>Sorang anak yang memiliki kekuatan halu</p>
+          <p>Bug & Game Tester</p>
           </div>
         </div>
       </div>
