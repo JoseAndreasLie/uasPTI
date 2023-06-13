@@ -23,7 +23,7 @@ function Welcome() {
     canvas.height = window.innerHeight - canvasOffsetY;
 
     let isPainting = false;
-    let lineWidth = 50;
+    let lineWidth = 45;
 
     const draw = (e) => {
       if (!isPainting) {
@@ -167,6 +167,11 @@ function Welcome() {
           </animated.div>
         </div>
       </animated.div>
+      {canvasVisible && (
+        <div className="scratch">
+          <center>Left click, hold and drag the mouse twice!</center>
+        </div>
+      )}
     </section>
   );
 }
