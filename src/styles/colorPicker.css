@@ -2,8 +2,9 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  margin-left: -25px;
 }
+
+
 #Flex {
     margin-left: 100px;
     display: grid;
@@ -233,12 +234,24 @@
   }
   
   #imgSize { 
-    width: 370px;
+    width: 370px; 
+  }
+
+  @media(max-width:1100px){
+    #Flex {
+      margin-left: 32px;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(3, 70px);
+      justify-content: space-between;
+      align-items: center;
+      grid-gap: 3px; /* Adjust the value to your preference */
+    }
   }
 
 @media(max-width:720px){
   #Flex {
-    margin-left: 50px;
+    margin-left: 10px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 70px);
@@ -247,4 +260,20 @@
     grid-gap: 3px; /* Adjust the value to your preference */
   }
 }
+
+@media(max-width: 600px) {
+  .pilihWarna {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: -8px; 
+    -webkit-overflow-scrolling: touch;
+    
+  }
+  
+  button {
+    flex: 0 0 auto;
+    display: inline-block;
+  }
+}
+
   

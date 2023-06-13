@@ -137,6 +137,7 @@ function BucketColorPicker() {
       <h2>
         <center>{selectedColor.name}</center>
       </h2>
+      <br />
       <div className="pilihWarna">
         <ColorPicker onColorChange={handleColorChange} />
       </div>
