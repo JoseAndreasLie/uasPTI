@@ -6,10 +6,7 @@ const ColorSchemeGenerator = () => {
   const [seedColor, setSeedColor] = useState('#F55A5A');
   const [mode, setMode] = useState('monochrome');
 
-  const copyColorAndCodes = (color) => {
-    navigator.clipboard.writeText(color);
-    alert(`Color code: ${color} has been copied`);
-  };
+
 
   const getColorScheme = () => {
     fetch(
@@ -69,9 +66,9 @@ const ColorSchemeGenerator = () => {
                 <div
                   className="color"
                   style={{ backgroundColor: color.hex.value }}
-                  onClick={() => copyColorAndCodes(color.hex.value)}
+        
                 ></div>
-                <p className="color-code" onClick={() => copyColorAndCodes(color.hex.value)}>
+                <p className="color-code">
                   {color.hex.value}
                 </p>
               </div>
@@ -82,10 +79,6 @@ const ColorSchemeGenerator = () => {
                 <li>Pick a seed color</li>
                 <li>Select a color mode and</li>
                 <li>Click on the button to generate your color scheme</li>
-                <li>
-                  P.S: You can also click on the generated colors or on their
-                  corresponding color codes to copy their hex value
-                </li>
               </ul>
             </div>
           )}

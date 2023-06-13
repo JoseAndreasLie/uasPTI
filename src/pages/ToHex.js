@@ -26,17 +26,18 @@ const ColorConverter = () => {
     return (
         <div>
             <div className="container-fluid animated-bg">
-                <div className="row">
-                <div className="header">
-                    <div className="col-md-12 col-sm-12">
-                    <div className="header-brand">
-                        <a className="nbp" href="#">TAC</a>
-                        <span className="brand-small">Color Picker to Hex Color Converter</span>
+                    <div className="header">
+                        <div className="header-brand">
+                            <div className="hTAC">
+                                <a className="nbp" href="#">TAC</a>
+                            </div>
+                            <div className="hText">
+                                <span className="brand-small">Color Picker to Hex Color Converter</span>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-                </div>
             </div>
+
             <div className="container-main" style={{ backgroundColor: backgroundColor }}>
                 <form onSubmit={handleSubmit}>
                     <input type="color" id="colorPicker" value={color} onChange={handleColorChange} />
