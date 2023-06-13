@@ -22,4 +22,9 @@ Kami membuat website yang berfokus pada showcase sebuah cat tembok berwarna hita
 Keterangan tambahan:
 Website ini responsive dan dapat digunakan di handphone.
 
+Cara menggunakan website:
+- Di terminal VSCode Folder BackEnd, ketik NPM Start. Hal Ini berfungsi untuk mengaktifkan API gmail (Pengiriman gambar via gmail)
+- Di terminal VSCode Main Foldernya, ketik NPM Start atau buka melewati hostingan.
+- Website siap untuk digunakan
+
 Terimakasih.
