@@ -75,10 +75,13 @@
 
 #FlexBucket {
   position: fixed;
+  bottom: 250px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  margin-top: -300px;
-  margin-left: 170px;
-  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  gap: -100px;
 }
 
 #flexBucketText1 {
@@ -147,18 +150,166 @@
 }
 
 #NewColorBucket {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
+#NewColorBucket img {
+  max-width: 100%;
+  height: auto;
+}
 
 @media (max-width: 1100px) {
   :root {
     --scenery-margin-left: calc(var(--scenery-margin-left-mobile) - (1100px - 100vw)/2);
   }
-  
+
   #ChangeScenery {
     margin-left: var(--scenery-margin-left);
+  }
+
+  #FlexBucket {
+    margin-left: calc(20vw - 200px);
+  }
+
+  #NewColorBucket {
+    min-width: calc(200px + (400 - 200) * (100vw - 700px) / (1100 - 700));
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  #FlexBucket button {
+    flex: 0 0 auto;
+  }
+
+  #NewColorBucket {
+    min-width: 50px;
+  }
+
+  #FlexBucket {
+    margin-left: calc(50vw - 250px);
+    flex-direction: column;
+    bottom: 0px;
+  }
+
+  #flexBucketText1{
+    display: flex;
+    margin-left: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 200px;
+    margin-top: -180px;
+  }
+
+  #flexBucketText2{
+    display: flex;
+    margin-left: 210px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    margin-top: -180px;
+  }
+
+  #flexBucketText3{
+    display: flex;
+    margin-left: 210px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    margin-top: -180px;
+  }
+
+  #flexBucketText4{
+    display: flex;
+    margin-left: 210px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    margin-top: -180px;
+  }
+
+  #flexBucketText5{
+    display: flex;
+    margin-left: 210px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    margin-top: -180px;
+  }
+  
+  #ChangeScenery {
+    margin-top: 100px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  #FlexBucket button {
+    flex: 0 0 auto;
+  }
+
+  #NewColorBucket {
+    width: 150px;
+  }
+
+  #FlexBucket {
+    margin-left: calc(50vw - 250px);
+    flex-direction: column;
+    bottom: 0px;
+  }
+
+  #flexBucketText1{
+    display: flex;
+    margin-left: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: -120px;
+  }
+
+  #flexBucketText2{
+    display: flex;
+    margin-left: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 110px;
+    margin-top: -120px;
+  }
+
+  #flexBucketText3{
+    display: flex;
+    margin-left: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 110px;
+    margin-top: -120px;
+  }
+
+  #flexBucketText4{
+    display: flex;
+    margin-left: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 110px;
+    margin-top: -120px;
+  }
+
+  #flexBucketText5{
+    display: flex;
+    margin-left: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 110px;
+    margin-top: -120px;
+  }
+  
+  #ChangeScenery {
+    margin-top: 100px;
   }
 }
