@@ -45,7 +45,6 @@
     animation: animate 15s ease-in-out infinite;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 900;
   }
   
     @keyframes animate {

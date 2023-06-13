@@ -7,6 +7,7 @@ import OWEN from '../img/OWEN-small.png';
 import REY from '../img/REY-small.png';
 import KHARIS from '../img/KHARIS-small.png';
 
+
 function Aboutus() {
 
   return (
@@ -29,7 +30,7 @@ function Aboutus() {
           <img src={LEO} />
           <h3>Leonardo Tyoes Huibu</h3>
           <h3>00000065503</h3>
-          <p>UX Designer</p>
+          <p>K E J U</p>
           </div> 
         </div>
 
@@ -38,7 +39,7 @@ function Aboutus() {
         <img src={JOSE} />
           <h3>Jose Andreas Lie</h3>
           <h3>00000067097</h3>
-          <p>UX Designer</p>
+          <p>A.k.a. José (Spanish)</p>
           </div>
         </div>
     
@@ -47,7 +48,7 @@ function Aboutus() {
         <img src={OWEN} />
           <h3>Owen Christian Cahyadi</h3>
           <h3>00000067055</h3>
-          <p>Bug & Game Tester</p>
+          <p>Akuh Wibu</p>
           </div>
         </div>
 
@@ -68,7 +69,7 @@ function Aboutus() {
         <img src={KHARIS} />
           <h3>Kristoforus Kharis P. S.</h3>
           <h3>00000067127</h3>
-          <p>Bug & Game Tester</p>
+          <p>Sorang anak yang memiliki kekuatan halu</p>
           </div>
         </div>
       </div>

@@ -81,8 +81,25 @@ textarea:focus {
   left: 15vw;
 }
 
-@media (min-width: 768px) {
-  .bounceIn {
-    padding: 0.25em 0.75em;
+.file{
+  height: 38px;
+}
+
+@media screen and (max-width:600px) {
+  #form-container{
+    margin-left: 9vw !important;
+    margin-top: 20vh !important;
+  }
+
+  .bounceIn{
+    left: 60vw;
+  }
+
+  .bounceIn:active{
+    left: 60vw;
+  }
+
+  .titleSend{
+    padding-left: 2vw ;
   }
 }
