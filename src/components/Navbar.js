@@ -20,6 +20,7 @@ import ToRgb from '../pages/ToRgb';
 import ColorScheme from '../pages/ColorScheme';
 import Gmail from './Gmail';
 import NewColor from '../pages/NewColorCode';
+import ColorMixer from '../pages/ColorMixer';
 
 function Navbar1() {
     return (
@@ -43,6 +44,7 @@ function Navbar1() {
                                     <NavDropdown.Item as={Link} to="/convertN">Color to Name</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/convertR">Color to RGB</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/scheme">Color Scheme</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/colorMixer">Color Mixer</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
                             <Button as={Link} to="/draw" variant="outline-success">Draw</Button>
@@ -64,6 +66,7 @@ function Navbar1() {
                 <Route path="/scheme" element={<ColorScheme /> }/>
                 <Route path="/send" element={<Gmail />} />
                 <Route path="/newColor" element={<NewColor />} />
+                <Route path="/colorMixer" element={<ColorMixer />} />
             </Routes>
         </Router>
     );

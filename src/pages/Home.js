@@ -3,6 +3,7 @@ import Title from '../components/Title';
 import Motivasion from '../components/Motivasion';
 import Bucket from '../components/Bucket';
 import Galeri from '../components/Galeri';
+import Footer from '../components/Footer';
 import whitebucket from '../img/whitebucket.png';
 import blackbucket from '../img/blackbucket.png';
 import bluebucket from '../img/blueBucket.png';
@@ -73,6 +74,7 @@ function Home() {
                 />
             </div>
         </div>
+        <Footer />
     </m.div>
 );
 }
