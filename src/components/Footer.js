@@ -36,7 +36,7 @@ const BubbleFooter = () => {
         <div className="footer">
           <div className="bubbles">{createBubbles()}</div>
           <div className="content">
-            <div>
+            <div className="isi1">
               <div>
                 <FaMapMarkerAlt />
                 <a href="#">Indonesia Banten, Kota Tangerang</a>
@@ -50,9 +50,9 @@ const BubbleFooter = () => {
                 <a href="#">TAC@gmail.com</a>
               </div>
             </div>
-            <div>
+            <div className="isi2">
               <img className="image" src={Logo}/>
-              <p>Copyright Â© 2023 TAC</p>
+              <p>Copyright © 2023 TAC</p>
             </div>
           </div>
         </div>

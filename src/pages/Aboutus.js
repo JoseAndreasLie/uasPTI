@@ -7,7 +7,6 @@ import OWEN from '../img/OWEN-small.png';
 import REY from '../img/REY-small.png';
 import KHARIS from '../img/KHARIS-small.png';
 
-
 function Aboutus() {
 
   return (

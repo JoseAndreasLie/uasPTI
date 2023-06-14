@@ -79,5 +79,17 @@
 @media (max-width:600px){
     .footer{
         margin-top: 0px;
+        width: 85vw;
+        padding-left:15px;
+        --footer-background:white;
+    }
+
+    .isi1{
+        width: 144px;
+   
+    }
+    .isi2{
+        width: 85px;
+   
     }
 }
